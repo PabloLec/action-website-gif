@@ -15,5 +15,3 @@ export HOME=/github/home
 echo "______________________"
 
 cat geckodriver.log
-
-cp /app/image.gif /github/workspace/

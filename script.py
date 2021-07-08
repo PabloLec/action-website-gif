@@ -32,7 +32,7 @@ def create_gif():
     from PIL import Image
     
     # filepaths
-    fp_out = "/app/image.gif"
+    fp_out = "/github/workspace/image.gif"
     
     img, *imgs = [Image.open(f) for f in screenshot_list]
     img.save(fp=fp_out, format='GIF', append_images=imgs,
