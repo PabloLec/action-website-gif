@@ -6,9 +6,11 @@ echo "______________________"
 ls
 echo "______________________"
 
-cd /app
+export HOME=/root
 
 python3 /app/script.py || echo
+
+export HOME=/github/home 
 
 echo "______________________"
 
