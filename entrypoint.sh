@@ -1,12 +1,10 @@
 #!/bin/bash
+set -o errexit -o pipefail -o nounset
 
-echo "test"
-
-#echo nameserver 8.8.8.8 > /etc/resolv.conf
-
+TOKEN=${REPO_TOKEN}
 
 python3 script.py
 
 ##cat geckodriver.log
 
-/bin/bash
+echo "${REPO_TOKEN}"

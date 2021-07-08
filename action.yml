@@ -8,3 +8,5 @@ branding:
 runs:
   using: "docker"
   image: "Dockerfile"
+  with:
+    repo_token: ${{ secrets.GITHUB_TOKEN }}
