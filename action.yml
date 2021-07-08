@@ -1,0 +1,10 @@
+name: test-web-gif
+description: "To Be Deleted"
+author: PabLec
+branding:
+  color: green
+  icon: send
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
