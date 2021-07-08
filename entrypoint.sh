@@ -3,6 +3,6 @@ set -o errexit -o pipefail -o nounset
 
 python3 /app/script.py
 
-##cat geckodriver.log
+cat /app/geckodriver.log
 
-cp image.gif /github/workspace/
+cp /app/image.gif /github/workspace/
