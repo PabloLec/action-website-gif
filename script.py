@@ -9,7 +9,7 @@ def scroll_to(current_y:int, final_y: int, step: int, driver):
     while current_y < final_y:
         current_y += step
         driver.execute_script(f"window.scrollTo(0, {str(current_y)})")
-        driver.save_screenshot(f"screenshot{str(scrnsht_index)}.png")
+        driver.save_screenshot(f"/app/screenshot{str(scrnsht_index)}.png")
         screenshot_list.append(f"/app/screenshot{str(scrnsht_index)}.png")
         scrnsht_index += 1
         
@@ -29,7 +29,6 @@ driver.close()
 driver.quit()
 
 def create_gif():
-    import glob
     from PIL import Image
     
     # filepaths
