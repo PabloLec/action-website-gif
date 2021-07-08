@@ -8,5 +8,3 @@ branding:
 runs:
   using: "docker"
   image: "Dockerfile"
-  args:
-    - ${{ inputs.repo_token }}
